@@ -7,9 +7,22 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "android:staging": "react-native run-android --variant=stagingdebug --appId=com.rn_multi_envs.staging",
+    "android:staging-release": "react-native run-android --variant=stagingrelease --appId=com.rn_multi_envs.staging",
+    "android:dev": "react-native run-android --variant=developmentdebug --appId=com.rn_multi_envs.development",
+    "android:dev-release": "react-native run-android --variant=developmentrelease --appId=com.rn_multi_envs.development",
+    "android:prod": "react-native run-android --variant=productiondebug --appId=com.rn_multi_envs.production",
+    "android:prod-release": "react-native run-android --variant=productionrelease --appId=com.rn_multi_envs.production",
+    "ios:staging": "react-native run-ios --scheme \"rn_multi_envs_staging\"",
+    "ios:staging-release": "react-native run-ios --scheme \"rn_multi_envs_staging\" --configuration Release",
+    "ios:dev": "react-native run-ios --scheme \"rn_multi_envs_development\"",
+    "ios:dev-release": "react-native run-ios --scheme \"rn_multi_envs_development\" --configuration Release",
+    "ios:prod": "react-native run-ios --scheme \"rn_multi_envs_production\"",
+    "ios:prod-release": "react-native run-ios --scheme \"rn_multi_env_production\" --configuration Release"
   },
   "dependencies": {
+    "joi": "^17.6.0",
     "react": "18.1.0",
     "react-native": "0.70.0",
     "react-native-config": "^1.4.6"
